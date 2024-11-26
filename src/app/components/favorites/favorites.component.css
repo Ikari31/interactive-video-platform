@@ -5,8 +5,23 @@ h2 {
 }
 
 .video-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
   padding: 20px;
+}
+
+.favorite-item button {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
 }

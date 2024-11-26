@@ -1,24 +1,24 @@
 .video-card {
-    display: flex;
-    flex-direction: column;
-    width: calc(25% - 40px);
-    margin: 20px;
-    text-decoration: none;
-    color: var(--color-white);
-    background: var(--gradient-primary);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s;
-  }
-  
-  .video-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .video-card img {
-    width: 100%;
-    height: auto;
-  }
+  flex: 1 1 calc(30% - 40px); /* Três cards por linha menos margens */
+  max-width: calc(30% - 40px);
+  box-sizing: border-box;
+  margin: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--gradient-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
   
   .video-info {
     padding: 15px;
@@ -41,21 +41,26 @@
     font-size: 0.8em;
   }
 
-  @media (max-width: 992px) {
+  @media (min-width: 992px) {
     .video-card {
-      width: calc(33.33% - 40px);
+      flex: 1 1 calc(30% - 40px);
+      max-width: calc(30% - 40px);
     }
   }
   
-  @media (max-width: 768px) {
+  /* Dois cards por linha em telas médias */
+  @media (max-width: 991px) and (min-width: 768px) {
     .video-card {
-      width: calc(50% - 40px);
+      flex: 1 1 calc(45% - 40px);
+      max-width: calc(45% - 40px);
     }
   }
   
-  @media (max-width: 576px) {
+  /* Um card por linha em telas pequenas */
+  @media (max-width: 767px) {
     .video-card {
-      width: calc(100% - 40px);
+      flex: 1 1 calc(100% - 40px);
+      max-width: calc(100% - 40px);
     }
   }
   
