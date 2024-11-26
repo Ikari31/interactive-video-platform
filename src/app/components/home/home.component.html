@@ -1,5 +1,8 @@
-<app-search-bar (search)="onSearch($event)"></app-search-bar>
-<div class="video-grid">
-  <app-video-card *ngFor="let video of videos" [video]="video"></app-video-card>
+<div class="container">
+    <div class="video-grid">
+      <app-video-card
+        *ngFor="let video of videos"
+        [video]="video"
+      ></app-video-card>
+    </div>
 </div>
-

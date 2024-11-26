@@ -16,7 +16,8 @@ export class VideoService {
   }
 
   getVideoById(id: number): Observable<Video> {
-    return this.http.get<Video>(`${this.apiUrl}/${id}`);
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Video>(url);
   }
 
   searchVideos(term: string): Observable<Video[]> {

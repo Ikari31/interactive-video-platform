@@ -14,7 +14,7 @@ export class FavoriteService {
     return this.http.post(this.apiUrl, { videoId });
   }
 
-  getFavorites(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+  getFavorites(): Observable<{ id: number; videoId: number }[]> {
+    return this.http.get<{ id: number; videoId: number }[]>(this.apiUrl);
   }
 }

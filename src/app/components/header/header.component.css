@@ -1,0 +1,62 @@
+header {
+    background-color: var(--primary-color);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    color: var(--text-primary);
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: var(--text-primary);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Styles for the search bar container */
+  .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  
+  .search-container app-search-bar {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .search-container {
+      order: 2;
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .nav-links {
+      order: 3;
+      margin-top: 10px;
+    }
+  }
+  

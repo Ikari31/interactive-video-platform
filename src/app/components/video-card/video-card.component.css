@@ -1,40 +1,62 @@
-/* video-card.component.css */
-
 .video-card {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    cursor: pointer;
-    text-decoration: none; /* Remover sublinhado padrão dos links */
-    color: inherit; /* Manter a cor do texto */
-  }
+    width: calc(25% - 40px); /* Quatro cards por linha menos margem */
+    margin: 20px;
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
   
-  .video-card img {
+.video-card:hover {
+    transform: scale(1.02);
+}
+  
+.video-card img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
-  }
+}
   
-  .video-info {
-    padding: 10px 0;
-  }
+.video-info {
+    padding: 15px;
+}
   
-  .video-info h3 {
-    font-size: 1.1em;
-    margin: 5px 0;
-    color: #000;
-  }
+.video-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: var(--text-primary);
+}
   
-  .video-info .description {
-    color: #555;
+.video-info .description {
+    color: var(--text-secondary);
     font-size: 0.9em;
-    margin: 5px 0;
-  }
+    margin-bottom: 10px;
+}
   
-  .video-info .details {
-    color: #888;
+.video-info .details {
+    color: var(--text-secondary);
     font-size: 0.8em;
-  }
+}
+
+@media (max-width: 992px) {
+    .video-card {
+      width: calc(33.33% - 40px);
+    }
+}
   
+  
+@media (max-width: 768px) {
+    .video-card {
+      width: calc(50% - 40px);
+    }
+}
+  
+  
+@media (max-width: 576px) {
+    .video-card {
+      width: calc(100% - 40px);
+    }
+}

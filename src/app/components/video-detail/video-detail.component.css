@@ -1,0 +1,44 @@
+.video-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+  
+.video-player video {
+    width: 100%;
+    max-height: 450px;
+    background-color: #000;
+}
+  
+.video-info {
+    margin-top: 20px;
+}
+  
+.video-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+  
+.video-info .details {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+  
+.video-info .description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+  
+.video-info button {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.video-info button:hover {
+    background-color: var(--primary-color);
+}
+  

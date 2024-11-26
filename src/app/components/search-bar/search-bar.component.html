@@ -1,1 +1,8 @@
-<input type="text" placeholder="Pesquisar vídeos..." (input)="onSearch($event)">
+<div class="search-bar">
+    <input
+      type="text"
+      [formControl]="searchControl"
+      placeholder="Pesquisar vídeos..."
+    />
+</div>
+  

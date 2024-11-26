@@ -1,12 +1,11 @@
-<!-- video-card.component.html -->
-
 <a class="video-card" [routerLink]="['/video', video.id]">
     <img [src]="video.thumbnail" [alt]="video.title" />
     <div class="video-info">
       <h3>{{ video.title }}</h3>
       <p class="description">{{ video.description }}</p>
       <p class="details">
-        {{ video.views }} visualizações • {{ video.uploadDate | date: 'dd/MM/yyyy' }}
+        {{ video.views }} visualizações •
+        {{ video.uploadDate | date: 'dd/MM/yyyy' }}
       </p>
     </div>
-  </a>
+  </a>  

@@ -1,24 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../../services/video.service';
+import { SearchService } from '../../services/search.service';
 import { Video } from '../../models/video.model';
 import { VideoCardComponent } from '../video-card/video-card.component';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [VideoCardComponent, SearchBarComponent, CommonModule],
+  imports: [VideoCardComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
   videos: Video[] = [];
 
-  constructor(private videoService: VideoService) { }
+  constructor(
+    private videoService: VideoService,
+    private searchService: SearchService
+  ) {}
 
   ngOnInit(): void {
     this.getVideos();
+    this.searchService.search$.subscribe((term) => {
+      this.onSearch(term);
+    });
   }
 
   getVideos(): void {

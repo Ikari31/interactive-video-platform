@@ -1,11 +1,16 @@
-<div class="video-player">
-    <!-- Player de vídeo -->
-    <video [src]="video.url" controls></video>
-  </div>
-  <div class="video-info">
-    <h2>{{ video.title }}</h2>
-    <p>{{ video.views }} visualizações • {{ video.uploadDate | date }}</p>
-    <button (click)="addToFavorites()">Adicionar aos Favoritos</button>
-    <p>{{ video.description }}</p>
+<div class="container">
+    <div class="video-detail">
+        <div class="video-player">
+          <video [src]="video.url" controls></video>
+        </div>
+        <div class="video-info">
+          <h2>{{ video.title }}</h2>
+          <p class="details">
+            {{ video.views }} visualizações •
+            {{ video.uploadDate | date: 'dd/MM/yyyy' }}
+          </p>
+          <button (click)="addToFavorites()">Adicionar aos Favoritos</button>
+          <p class="description">{{ video.description }}</p>
+        </div>
+      </div>
 </div>
-  
