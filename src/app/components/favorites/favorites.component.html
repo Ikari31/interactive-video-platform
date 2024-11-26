@@ -1,9 +1,9 @@
 <div class="container">
-    <h2>Meus Favoritos</h2>
-    <div class="video-grid">
-      <app-video-card
-        *ngFor="let video of favoriteVideos"
-        [video]="video"
-      ></app-video-card>
+  <h2>Meus Favoritos</h2>
+  <div class="video-grid">
+    <div class="favorite-item" *ngFor="let video of favoriteVideos; let i = index">
+      <app-video-card [video]="video"></app-video-card>
+      <button (click)="removeFromFavorites(i)">Remover dos Favoritos</button>
     </div>
+  </div>  
 </div>

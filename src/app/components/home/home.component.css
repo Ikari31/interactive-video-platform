@@ -1,5 +1,6 @@
 .video-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;

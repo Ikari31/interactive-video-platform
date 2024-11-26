@@ -1,62 +1,61 @@
 .video-card {
     display: flex;
     flex-direction: column;
-    width: calc(25% - 40px); /* Quatro cards por linha menos margem */
+    width: calc(25% - 40px);
     margin: 20px;
     text-decoration: none;
-    color: var(--text-primary);
-    background-color: var(--primary-color);
+    color: var(--color-white);
+    background: var(--gradient-primary);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.2s;
-}
+  }
   
-.video-card:hover {
+  .video-card:hover {
     transform: scale(1.02);
-}
+  }
   
-.video-card img {
+  .video-card img {
     width: 100%;
     height: auto;
-}
+  }
   
-.video-info {
+  .video-info {
     padding: 15px;
-}
+  }
   
-.video-info h3 {
+  .video-info h3 {
     margin: 10px 0;
     font-size: 1.2em;
-    color: var(--text-primary);
-}
+    color: var(--color-white);
+  }
   
-.video-info .description {
-    color: var(--text-secondary);
+  .video-info .description {
+    color: var(--color-white);
     font-size: 0.9em;
     margin-bottom: 10px;
-}
+  }
   
-.video-info .details {
-    color: var(--text-secondary);
+  .video-info .details {
+    color: var(--color-white);
     font-size: 0.8em;
-}
+  }
 
-@media (max-width: 992px) {
+  @media (max-width: 992px) {
     .video-card {
       width: calc(33.33% - 40px);
     }
-}
+  }
   
-  
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .video-card {
       width: calc(50% - 40px);
     }
-}
+  }
   
-  
-@media (max-width: 576px) {
+  @media (max-width: 576px) {
     .video-card {
       width: calc(100% - 40px);
     }
-}
+  }
+  

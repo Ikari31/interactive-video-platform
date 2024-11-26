@@ -4,46 +4,34 @@
       "id": "1",
       "title": "Aprenda Angular em 10 minutos",
       "description": "Uma introdução rápida ao Angular.",
-      "thumbnail": "./assets/images/angular.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/RlhfMnzcFGw/maxresdefault.jpg",
       "url": "assets/videos/angular.mp4",
-      "views": 1510,
+      "views": 1515,
       "uploadDate": "2024-10-01T00:00:00Z"
     },
     {
       "id": "2",
       "title": "Masterizando TypeScript",
       "description": "Torne-se um expert em TypeScript.",
-      "thumbnail": "assets/images/typescript.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/KmKZfUqNGOA/maxresdefault.jpg",
       "url": "assets/videos/typescript.mp4",
-      "views": 2502,
+      "views": 2503,
       "uploadDate": "2024-09-15T00:00:00Z"
     },
     {
       "id": "3",
       "title": "Aprendendo React",
       "description": "Aprenda React do Zero.",
-      "thumbnail": "assets/images/typescript.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/Y8tP1jbRYHY/maxresdefault.jpg",
       "url": "assets/videos/typescript.mp4",
-      "views": 501,
+      "views": 502,
       "uploadDate": "2024-09-28T00:00:00Z"
     }
   ],
   "favorites": [
     {
-      "id": "1",
-      "videoId": 2
-    },
-    {
-      "id": "5fe1",
-      "videoId": "3"
-    },
-    {
-      "id": "31af",
-      "videoId": "3"
-    },
-    {
-      "id": "d615",
-      "videoId": "3"
+      "id": "6651",
+      "videoId": "1"
     }
   ]
 }

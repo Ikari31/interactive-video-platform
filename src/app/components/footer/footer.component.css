@@ -1,10 +1,7 @@
 footer {
-    background-color: var(--primary-color);
-    color: var(--text-primary);
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
   

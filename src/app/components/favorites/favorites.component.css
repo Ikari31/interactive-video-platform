@@ -1,14 +1,12 @@
 h2 {
-    text-align: center;
-    color: var(--primary-color);
-    margin: 20px 0;
-  }
-  
-  
-.video-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+  text-align: center;
+  color: var(--color-orange);
+  margin: 20px 0;
 }
-  
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}

@@ -9,7 +9,9 @@
             {{ video.views }} visualizações •
             {{ video.uploadDate | date: 'dd/MM/yyyy' }}
           </p>
-          <button (click)="addToFavorites()">Adicionar aos Favoritos</button>
+          <button (click)="addToFavorites()" [disabled]="isFavorite">
+            {{ isFavorite ? 'Já nos Favoritos' : 'Adicionar aos Favoritos' }}
+          </button>
           <p class="description">{{ video.description }}</p>
         </div>
       </div>

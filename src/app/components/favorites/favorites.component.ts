@@ -15,6 +15,7 @@ import { VideoCardComponent } from '../video-card/video-card.component';
 })
 export class FavoritesComponent implements OnInit {
   favoriteVideos: Video[] = [];
+  favoriteIds: number[] = [];
 
   constructor(
     private videoService: VideoService,
@@ -28,11 +29,26 @@ export class FavoritesComponent implements OnInit {
   loadFavorites(): void {
     this.favoriteService.getFavorites().subscribe(
       (favorites) => {
-        console.log('Favoritos obtidos:', favorites);
+        this.favoriteIds = favorites.map(fav => fav.id); // Armazena os IDs dos favoritos
         this.getFavoriteVideos(favorites);
       },
       (error) => {
         console.error('Erro ao obter favoritos:', error);
+      }
+    );
+  }
+
+  removeFromFavorites(index: number): void {
+    const favoriteId = this.favoriteIds[index];
+    this.favoriteService.removeFavorite(favoriteId).subscribe(
+      () => {
+        console.log('Vídeo removido dos favoritos com sucesso.');
+        // Remove o vídeo da lista localmente
+        this.favoriteVideos.splice(index, 1);
+        this.favoriteIds.splice(index, 1);
+      },
+      (error) => {
+        console.error('Erro ao remover dos favoritos:', error);
       }
     );
   }
