@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Aprenda Angular em 10 minutos",
+      "description": "Uma introdução rápida ao Angular.",
+      "thumbnail": "assets/images/angular.jpg",
+      "url": "assets/videos/angular.mp4",
+      "views": 1505,
+      "uploadDate": "2023-10-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Masterizando TypeScript",
+      "description": "Torne-se um expert em TypeScript.",
+      "thumbnail": "assets/images/typescript.jpg",
+      "url": "assets/videos/typescript.mp4",
+      "views": 2500,
+      "uploadDate": "2023-09-15T00:00:00Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "1",
+      "videoId": 2
+    }
+  ]
+}

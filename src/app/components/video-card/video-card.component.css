@@ -1,0 +1,40 @@
+/* video-card.component.css */
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none; /* Remover sublinhado padrão dos links */
+    color: inherit; /* Manter a cor do texto */
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .video-info {
+    padding: 10px 0;
+  }
+  
+  .video-info h3 {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #000;
+  }
+  
+  .video-info .description {
+    color: #555;
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  
+  .video-info .details {
+    color: #888;
+    font-size: 0.8em;
+  }
+  
