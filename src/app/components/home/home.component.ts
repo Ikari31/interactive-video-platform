@@ -22,7 +22,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getVideos();
+    
     this.searchService.search$.subscribe((term) => {
+      console.log('Termo recebido no HomeComponent:', term);
       this.onSearch(term);
     });
   }
@@ -32,10 +34,23 @@ export class HomeComponent implements OnInit {
   }
 
   onSearch(term: string): void {
+    console.log('Iniciando pesquisa com termo:', term);
     if (term) {
-      this.videoService.searchVideos(term).subscribe(videos => this.videos = videos);
+      this.videoService.getVideos().subscribe(
+        (videos) => {
+          this.videos = videos.filter((video) =>
+            video.title.toLowerCase().includes(term.toLowerCase()) ||
+            video.description.toLowerCase().includes(term.toLowerCase())
+          );
+          console.log('Vídeos filtrados localmente:', this.videos);
+        },
+        (error) => {
+          console.error('Erro ao buscar vídeos:', error);
+        }
+      );
     } else {
       this.getVideos();
     }
   }
+  
 }

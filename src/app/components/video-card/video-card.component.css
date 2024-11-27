@@ -1,8 +1,9 @@
 .video-card {
   flex: 1 1 calc(30% - 40px); /* Três cards por linha menos margens */
-  max-width: calc(30% - 40px);
+  width: 100%;
+  max-width: 280px;
   box-sizing: border-box;
-  margin: 20px;
+  margin: 0 auto;
   text-decoration: none;
   color: var(--color-white);
   background: var(--gradient-primary);
@@ -48,7 +49,7 @@
     }
   }
   
-  /* Dois cards por linha em telas médias */
+  
   @media (max-width: 991px) and (min-width: 768px) {
     .video-card {
       flex: 1 1 calc(45% - 40px);
@@ -56,11 +57,13 @@
     }
   }
   
-  /* Um card por linha em telas pequenas */
+  
   @media (max-width: 767px) {
     .video-card {
       flex: 1 1 calc(100% - 40px);
       max-width: calc(100% - 40px);
     }
   }
+
+  
   

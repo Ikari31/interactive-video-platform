@@ -6,7 +6,7 @@
       "description": "Uma introdução rápida ao Angular.",
       "thumbnail": "./assets/images/angular.jpg",
       "url": "./assets/videos/angular.mp4",
-      "views": 1519,
+      "views": 1520,
       "uploadDate": "2024-10-01T00:00:00Z"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Uma lista dos filmes mais incríveis lançados em 2024.",
       "thumbnail": "./assets/images/movies.jpg",
       "url": "./assets/videos/movies.mp4",
-      "views": 8340,
+      "views": 8341,
       "uploadDate": "2024-06-15T00:00:00Z"
     },
     {
@@ -96,22 +96,18 @@
       "description": "Clipe Musical de personagem do jogo League of Legends",
       "thumbnail": "./assets/images/jinx.jpg",
       "url": "./assets/videos/jinx.mp4",
-      "views": 20001,
+      "views": 20002,
       "uploadDate": "2023-12-31T00:00:00Z"
     }
   ],
   "favorites": [
     {
-      "id": "6651",
-      "videoId": "1"
-    },
-    {
-      "id": "46de",
-      "videoId": "2"
-    },
-    {
       "id": "04a9",
       "videoId": "11"
+    },
+    {
+      "id": "5b6f",
+      "videoId": "6"
     }
   ]
 }

@@ -1,14 +1,16 @@
 <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a [routerLink]="['/']">StreamCraft</a>
-      </div>
-      <div class="search-container">
-        <app-search-bar (search)="onSearch($event)"></app-search-bar>
-      </div>
-      <div class="nav-links">
-        <a [routerLink]="['/']">Início</a>
-        <a [routerLink]="['/favorites']">Favoritos</a>
-      </div>
-    </nav>
-</header>  
+  <nav class="navbar">
+    <div class="logo">
+      <a [routerLink]="['/']">
+        <img src="../../../assets/images/logo_ivp.png" alt="Logo da Aplicação" />
+      </a>
+    </div>
+    <div class="search-container">
+      <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    </div>
+    <div class="nav-links">
+      <a [routerLink]="['/']">Início</a>
+      <a [routerLink]="['/favorites']">Favoritos</a>
+    </div>
+  </nav>
+</header>

@@ -16,6 +16,7 @@ export class SearchBarComponent {
 
   constructor() {
     this.searchControl.valueChanges.subscribe((term) => {
+      //console.log('Termo digitado no SearchBarComponent:', term);
       this.search.emit(term ?? '');
     });
   }

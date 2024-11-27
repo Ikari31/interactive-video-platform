@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Video } from '../models/video.model';
+import { catchError, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,17 @@ export class VideoService {
   }
 
   searchVideos(term: string): Observable<Video[]> {
-    return this.http.get<Video[]>(`${this.apiUrl}?q=${term}`);
+    const url = `${this.apiUrl}?title_like=${encodeURIComponent(term)}&description_like=${encodeURIComponent(term)}`;
+    console.log('URL de busca:', url);
+    return this.http.get<Video[]>(url).pipe(
+      tap((videos) => {
+        console.log('Vídeos retornados do servidor:', videos);
+      }),
+      catchError((error) => {
+        console.error('Erro na requisição de busca:', error);
+        return of([]);
+      })
+    );
   }
 
   updateVideo(video: Video): Observable<Video> {

@@ -9,6 +9,7 @@ export class SearchService {
   search$ = this.searchSubject.asObservable();
 
   emitSearch(term: string): void {
+    //console.log('Termo emitido pelo SearchService:', term);
     this.searchSubject.next(term);
   }
 }

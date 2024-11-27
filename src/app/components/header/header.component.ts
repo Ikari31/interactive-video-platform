@@ -15,6 +15,7 @@ export class HeaderComponent {
   constructor(private searchService: SearchService) {}
 
   onSearch(term: string): void {
+    //console.log('Termo recebido no HeaderComponent:', term);
     this.searchService.emitSearch(term);
   }
 }
