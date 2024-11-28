@@ -8,17 +8,40 @@ header {
   width: auto;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-
 .logo a {
   display: flex;
   align-items: center;
 }
+
+.logout-button {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  background-color: var(--color-orange);
+}
+
+
+.logout-button i {
+  margin-right: 8px;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
 
 .search-container {
   flex: 1;
@@ -44,7 +67,7 @@ header {
 
 .search-container app-search-bar {
   width: 100%;
-  max-width: 400px; /* Correspondente ao max-width do search-bar */
+  max-width: 400px; 
 }
 
 .search-container app-search-bar input {
@@ -61,8 +84,6 @@ header {
   border-color: var(--color-orange);
 }
 
-
-
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -74,5 +95,10 @@ header {
 
   .nav-links {
     margin-top: 10px;
+  }
+
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
   }
 }

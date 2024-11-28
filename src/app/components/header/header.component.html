@@ -1,16 +1,17 @@
 <header>
   <nav class="navbar">
     <div class="logo">
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/home']">
         <img src="../../../assets/images/logo_ivp.png" alt="Logo da Aplicação" />
       </a>
     </div>
     <div class="search-container">
       <app-search-bar (search)="onSearch($event)"></app-search-bar>
     </div>
-    <div class="nav-links">
-      <a [routerLink]="['/']">Início</a>
+    <div class="nav-links" *ngIf="auth.isAuthenticated$ | async">
+      <a [routerLink]="['/home']">Início</a>
       <a [routerLink]="['/favorites']">Favoritos</a>
+      <button class="logout-button" (click)="logout()">Logout</button>
     </div>
   </nav>
 </header>
