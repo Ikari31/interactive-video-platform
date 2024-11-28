@@ -33,7 +33,7 @@ Siga as instruções abaixo para rodar o projeto localmente:
     ```
 2. Acesse o diretório do projeto:
     ```bash
-    cd interactive-video-platform
+    cd plataforma-videos
     ```
 3. Instale as dependências:
     ```bash
