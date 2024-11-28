@@ -1,59 +1,61 @@
-# PlataformaVideos
+# Interactive Video Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+A plataforma de vídeo interativo permite a criação e visualização de vídeos interativos com recursos de navegação e interatividade, oferecendo uma experiência imersiva para os usuários. Este projeto é ideal para quem deseja explorar vídeos com múltiplas opções e caminhos, proporcionando uma maneira envolvente de consumir conteúdo multimídia.
 
-## Development server
+## Funcionalidades
 
-To start a local development server, run:
+- **Navegação Interativa**: Os usuários podem interagir com o vídeo, escolhendo entre diferentes opções e alterando o curso da narrativa.
+- **Múltiplos Caminhos**: O conteúdo pode seguir diferentes caminhos, dependendo das escolhas feitas pelos espectadores.
+- **Integração de Vídeo**: Suporte a vídeos interativos, permitindo a integração de várias mídias.
+- **Interface de Usuário**: Design intuitivo e fácil de usar para uma experiência de navegação eficiente.
+  
+## Funcionalidades Implementadas
+- **Listagem de vídeos populares.**
+- **Pesquisa de vídeos.**
+- **Exibição de detalhes do vídeo.**
+- **Contador de visualizações.**
+- **Adição e listagem de favoritos.**
+- **Responsividade e acessibilidade.**
+  
+## Tecnologias Utilizadas
+  - Angular
+  - JSON-Server
+  - RxJS
+  - Auth0
 
-```bash
-ng serve
-```
+## Instalação
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Siga as instruções abaixo para rodar o projeto localmente:
 
-## Code scaffolding
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/Ikari31/interactive-video-platform.git
+    ```
+2. Acesse o diretório do projeto:
+    ```bash
+    cd interactive-video-platform
+    ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+4. Inicie o servidor/ db.json:
+    ```bash
+    npm run dev
+    ```
+    ou
+   ```bash
+    json-server --watch src/db.json
+    ```
+6. Inicie a aplicação angular:
+   ```bash
+    ng serve
+    ```
+7. Abra o navegador e acesse [http://localhost:4200] para visualizar a plataforma de vídeo interativo.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Autor
+Guilherme Veiga
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> **Nota**: As instruções de instalação podem variar de acordo com a configuração do seu sistema ou ambiente.
